@@ -23,8 +23,8 @@
 
 #cabecera{
     border-radius: 20px;
-    background-image: url("img/fondoCabecera.png");
     background-color: #000066;
+    background-image: url("../img/front/fondoCabecera.png");
     background-size: 150%;
     background-position-x: 16%;
     background-position-y: 16%;
@@ -32,8 +32,8 @@
 
 #contenido{
     border-radius: 20px;
-    background-image: url("img/fondoContenido.png");
-    background-color: #fff;
+    background-color: black;
+    background-image: url("../img/front/fondoContenido.png");
 }
 
 #cabecera, #contenido, #banners{
@@ -70,12 +70,11 @@
 }
 
 .menu:hover{
-    border-radius: 20px;
-    background-color: red;
-    background-size: 130% 130%;
+    border-radius: 25px;
+    background: url("../img/front/fondoMenu.png") red;
+    background-size: 120% 130%;
     background-position-x: 50%;
     background-position-y: 50%;
-    background-image: url("img/fondoMenu.png");
     top: 30%;
 }
 
