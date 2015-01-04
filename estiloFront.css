@@ -1,0 +1,110 @@
+/*
+ *{
+    border: 2px solid black;
+    
+}
+
+* *{
+    border: 2px solid green;
+}
+
+* * *{
+    border: 2px solid blue;
+}
+
+* * * *{
+    border: 2px solid red;
+}
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+#cabecera{
+    border-radius: 20px;
+    background-image: url("img/fondoCabecera.png");
+    background-color: #000066;
+    background-size: 150%;
+    background-position-x: 16%;
+    background-position-y: 16%;
+}
+
+#contenido{
+    border-radius: 20px;
+    background-image: url("img/fondoContenido.png");
+    background-color: #fff;
+}
+
+#cabecera, #contenido, #banners{
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#banners{padding: 0}
+
+.logo{
+    top: 50%;
+    background-color: #fff;
+    float: left;
+}
+
+#menus{
+    float: right;
+    height: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: inline-block;
+    position: relative;
+    
+    top: 33%;    
+    height: 50%;
+    padding: 0 10px;
+    min-width: 100px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.menu:hover{
+    border-radius: 20px;
+    background-color: red;
+    background-size: 130% 130%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-image: url("img/fondoMenu.png");
+    top: 30%;
+}
+
+.boton{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+#contenido div{
+    float: left;
+    margin-right: 20px;
+}
+
+.banner{
+    width: 20%;
+    
+    display: block;
+    float: left;
+
+}
+
+.banner img{    
+    width: 95%;
+    display: block;
+    max-width: 400px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
