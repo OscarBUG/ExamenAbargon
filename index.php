@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="cabecera">
-            <img class="logo" src="img/front/logo.png" alt="Logo" />
+            <img class="logo" src="img/logo.png" alt="Logo" />
             <ul id="menus">
                 <li class="menu"><a class="boton" href="">Menu 1</a></li>
                 <li class="menu"><a class="boton" href="">Menu Muy Grande</a></li>

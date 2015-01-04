@@ -1,0 +1,173 @@
+/*
+*{border: 2px solid black;}
+* *{border: 2px solid green;}
+* * *{border: 2px solid blue;}
+* * * *{border: 2px solid red;}
+* * * * *{border: 2px solid brown;}
+*/
+
+*{box-sizing: border-box;}
+
+#cabecera{
+    background-color: #000066;
+    background-image: url("../img/back/fondoCabecera.png");
+    background-size: 150%;
+    background-position-x: 16%;
+    background-position-y: 14%;
+}
+
+#operaciones{
+    border-radius: 10px;
+    background-color: gray;
+    background-image: url("../img/back/fondoOperaciones.jpg");
+    background-size: 100% 100%;
+}
+
+#cabecera, #contenido{
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#banners{padding: 0}
+
+.logo{
+    top: 50%;
+    background-color: #fff;
+    float: left;
+}
+
+#menus{
+    float: right;
+    height: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: inline-block;
+    position: relative;
+    
+    top: 33%;    
+    height: 50%;
+    padding: 0 10px;
+    min-width: 100px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.menu:hover{
+    border-radius: 25px;
+    background: url("../img/back/fondoMenu.png") blue;
+    background-size: 120% 130%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    top: 30%;
+}
+
+.boton{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+#contenido{
+    display: block;
+}
+
+#contenido>div{
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+    display: block;
+}
+
+#operaciones>a, #formulario>a{
+    display: block;
+    width: 60%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    margin: 2% auto;
+    padding: 2%; 
+    border-color: orangered;
+}
+
+#listado{
+    margin: 0 10%;
+    padding: 5%;
+    padding-bottom: 10%;
+    min-width: 80%;
+    min-height: 400px;
+    
+   
+    background: url("../img/back/fondoListado.png");
+    background-position-y: 40%;
+    background-position-x: 50%;
+    background-size: 160% 130%;
+    
+}
+
+#listado h2{
+    text-align: center;
+}
+
+#listado ul{
+    list-style:  none;
+    padding-right: 5%;
+}
+
+#listado li{
+    overflow: hidden;
+    padding: 8px;
+    border-bottom: 1px dashed black;
+}
+
+#listado a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.iconModificar{
+    background: url("../img/back/iconModificar.gif");
+}
+
+.iconEliminar{
+    background: url("../img/back/iconEliminar.gif");
+}
+
+.iconModificar, .iconEliminar{
+    //border: 2px solid green;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    float: right;
+    margin: 0 10px;
+    width: 20px;
+    height:  20px;
+    overflow: hidden;
+}
+
+.tituloLi{
+    float: left;
+}
+
+#formulario form label{
+    display: block;
+}
+
+#formulario form input{
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    width: 80%;
+}

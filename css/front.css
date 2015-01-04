@@ -1,25 +1,11 @@
 /*
- *{
-    border: 2px solid black;
-    
-}
-
-* *{
-    border: 2px solid green;
-}
-
-* * *{
-    border: 2px solid blue;
-}
-
-* * * *{
-    border: 2px solid red;
-}
+*{border: 2px solid black;}
+* *{border: 2px solid green;}
+* * *{border: 2px solid blue;}
+* * * *{border: 2px solid red;}
 */
 
-*{
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 
 #cabecera{
     border-radius: 20px;
@@ -27,7 +13,7 @@
     background-image: url("../img/front/fondoCabecera.png");
     background-size: 150%;
     background-position-x: 16%;
-    background-position-y: 16%;
+    background-position-y: 17%;
 }
 
 #contenido{
