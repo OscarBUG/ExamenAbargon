@@ -3,25 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Front-end</title>
-        <link type="text/css" href="estiloFront.css" rel="stylesheet" />
-        <script src="jquery-1.11.2.min.js"></script>
-
-        <script>
-
-            $(document).ready(function(){
-                $('#slider img:gt(0)').hide();
-                setInterval(function () {
-                    $('#slider img:first-child').fadeOut(0)
-                        .next('img').fadeIn(1000)
-                        .end().appendTo('#slider');
-                }, 4000);
-            });
-
-        </script>
+        <link type="text/css" href="css/front.css" rel="stylesheet" />
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/front.js"></script>
     </head>
     <body>
         <div id="cabecera">
-            <img class="logo" src="img/Logo.png" alt="Logo" />
+            <img class="logo" src="img/front/logo.png" alt="Logo" />
             <ul id="menus">
                 <li class="menu"><a class="boton" href="">Menu 1</a></li>
                 <li class="menu"><a class="boton" href="">Menu Muy Grande</a></li>
