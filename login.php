@@ -3,26 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Back-end</title>
-        <link type="text/css" href="css/back.css" rel="stylesheet" />
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script src="js/login.js"></script>
-        <?php
-            require 'Controlador/sesion.php';
-        ?>
+        <link type="text/css" href="Vista/css/back.css" rel="stylesheet" />
+        <script src="Vista/js/jquery-1.11.2.min.js"></script>
+        <script src="Vista/js/login.js"></script>
     </head>
     <body>
         <div id="cabecera">
-            <img class="logo" src="img/logo.png" alt="Logo" />
+            <div class="logo"></div>
             <div id="menus">
                 <h1>Inicia Sesión antes de continuar</h1>
             </div>
         </div>
-        <div>
-            <div id="formulario" class="centrado">
+        <div id="contenido" class="uno">
+            <div id="formulario">
                 <h2>Bienvenido</h2>
-                <form action="Controlador/login.php" METHOD="POST">
-                    <label>Usuario</label><input type="text" name="usuario" />
-                    <label>Contraseña</label><input type="text" name="pass" />
+                <form>
+                    <label>Usuario</label><input type="text" name="usuario" id="usuario" />
+                    <label>Contraseña</label><input type="password" name="password" id="password"/>
                 </form>
                 <a href=""><strong>Login</strong></a>
             </div>

@@ -32,6 +32,10 @@
 .logo{
     top: 50%;
     background-color: #fff;
+    background-image: url("../img/logo.png");
+    background-size: 100%;
+    width: 300px;
+    height: 100px;
     float: left;
 }
 
