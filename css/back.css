@@ -45,6 +45,10 @@
     padding: 0;
 }
 
+#menus h1{
+    color: white;
+}
+
 .menu{
     display: inline-block;
     position: relative;
@@ -74,7 +78,6 @@
     display: block;
 }
 
-
 #contenido{
     display: block;
 }
@@ -95,8 +98,8 @@
     background-color: orange;
     border-radius: 10px;
     color: white;
-    margin: 2% auto;
-    padding: 2%; 
+    margin: 10px auto;
+    padding: 10px; 
     border-color: orangered;
 }
 
@@ -145,7 +148,6 @@
 }
 
 .iconModificar, .iconEliminar{
-    //border: 2px solid green;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -169,5 +171,16 @@
     margin-bottom: 15px;
     border-radius: 10px;
     padding: 5px 5px;
-    width: 80%;
+    width: 100%;
+}
+
+.centrado{
+    border: 1px solid blue;
+    clear: both;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    text-align: center;
 }
