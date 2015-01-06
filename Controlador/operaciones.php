@@ -13,7 +13,7 @@ switch ($tipo) {
         if($titulos > 0)
         foreach ($titulos as $key => $value) {
             echo '<li>
-            <a href="#"><div class="tituloLi">'.$value[0].'</div></a>
+            <a><div class="tituloLi">'.$value[0].'</div></a>
             <a href="#"><div class="iconEliminar"></div></a>
             <a href="#"><div class="iconModificar"></div></a>
             </li>';

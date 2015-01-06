@@ -182,7 +182,7 @@
     display: block;
 }
 
-#formulario form input{
+.campo{
     display: block;
     margin-bottom: 15px;
     border-radius: 10px;

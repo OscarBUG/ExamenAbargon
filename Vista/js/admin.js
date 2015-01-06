@@ -2,22 +2,23 @@ $(document).on('ready', function () {
     var menus = $(".boton");
 
     menus.eq(0).on('click', function (e) { //Menus
-        e.preventDefault();
-        alert('Presionando un Menu');
+        // e.preventDefault();
+        // alert('Presionando un Menu');
     });
 
     menus.eq(1).on('click', function (e) { //Noticia
-        e.preventDefault();
-        alert('Presionando un Menu');
+        // e.preventDefault();
+        // alert('Presionando un Menu');
     });
 
     menus.eq(2).on('click', function (e) { //Banner
-        e.preventDefault();
-        alert('Presionando un Menu');
+        // e.preventDefault();
+        // alert('Presionando un Menu');
     });
     $listado = $("#listado ul")
 
     cargarDatos();
+    limpiar();
     setInterval('cargarDatos()', 11000);
 
     $("#formulario>a").on('click', function (e) {//Guardar
@@ -28,8 +29,10 @@ $(document).on('ready', function () {
             },
             type: 'POST',
             url: 'Controlador/operaciones.php',
-            data: {tipo: "guardar", tabla: "banners", titulo: $(".titulo").val(),
-                datos: {url: $(".url").val(), imagen: $(".imagen").val()}},
+            data: {tipo: "guardar", tabla: $('#menus').attr('class'), titulo: $(".campo").eq(0).val(),
+                datos: {
+                    campo1: $(".campo").eq(1).val(), campo2: $(".campo").eq(2).val()
+                }},
             success: function (data, textStatus, jqXHR) {
                 $("#formulario h1").html(data);
             },
@@ -62,7 +65,7 @@ function update() {
                     $("#listado h2").html("Eliminando...");
                 },
                 type: 'POST',
-                data: {tipo: "eliminar", tabla: "banners", titulo: $(".eliminar .tituloLi").html()},
+                data: {tipo: "eliminar", tabla: $('#menus').attr('class'), titulo: $(".eliminar .tituloLi").html()},
                 url: "Controlador/operaciones.php",
                 success: function (data, textStatus, jqXHR) {
                     $(".eliminar").fadeOut(1000, function () {
@@ -89,16 +92,16 @@ function update() {
             $.ajax({
                 beforeSend: function (xhr) {
                     $("#listado h2").html("Cargando Datos...");
-                    $(".titulo").prop('disabled', true);
+                    $(".campo").eq(0).prop('disabled', true);
                 },
                 type: 'POST',
-                data: {tipo: "cargar", tabla: "banners", titulo: $(".modificar .tituloLi").html()},
+                data: {tipo: "cargar", tabla: $('#menus').attr('class'), titulo: $(".modificar .tituloLi").html()},
                 url: "Controlador/operaciones.php",
                 success: function (data, textStatus, jqXHR) {
                     $datos = $.parseJSON(data);
-                    $(".titulo").val($datos[0]);
-                    $(".url").val($datos[1]);
-                    $(".imagen").val($datos[2]);
+                    for(var i=0; i<$datos.length; i++){
+                        $(".campo").eq(i).val($datos[i]);
+                    }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     $("#formulario h1").html("Ocurrio un error al cargar datos...");
@@ -119,7 +122,7 @@ function cargarDatos() {
             $listado.html("<h3>Actualizando Datos...</h3>");
         },
         type: 'POST',
-        data: {tipo: "mostrar", tabla: "banners"},
+        data: {tipo: "mostrar", tabla: $('#menus').attr('class')},
         url: "Controlador/operaciones.php",
         success: function (data, textStatus, jqXHR) {
             $listado.html(data);
@@ -136,11 +139,8 @@ function cargarDatos() {
 
 
 function limpiar() {
-    $(".titulo").prop('disabled', false);
-    $(".url").prop('disabled', false);
-    $(".imagen").prop('disabled', false);
-    $(".titulo").val("");
-    $(".url").val("");
-    $(".imagen").val("");
-    $(".titulo").focus();
+    for(var i=0; i<$(".campo").length; i++){
+        $(".campo").eq(i).prop('disabled', false);
+        $(".campo").val("");
+    }
 }

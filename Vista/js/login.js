@@ -17,7 +17,7 @@ $(document).on('ready', function () {
                 if(data.length !== 0){
                     $("#formulario h2").html(data);
                 }else{
-                    window.location="admin.php";
+                    window.location="menus.php";
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {

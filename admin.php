@@ -5,40 +5,23 @@
         <title>Back-end</title>
         <link type="text/css" href="Vista/css/back.css" rel="stylesheet" />
         <script src="Vista/js/jquery-1.11.2.min.js"></script>
-        <script src="Vista/js/admin.js"></script>
-        <?php
-        require 'Controlador/sesion.php';
-        enSesion();
-        ?>
+        <script src="Vista/js/login.js"></script>
     </head>
     <body>
         <div id="cabecera">
             <div class="logo"></div>
-            <ul id="menus">
-                <li class="menu"><a class="boton" href="">Admin. Menú</a></li>
-                <li class="menu"><a class="boton" href="">Admin. Noticia</a></li>
-                <li class="menu"><a class="boton" href="">Admin. Banners</a></li>
-                <li class="menu"><a class="boton" href="Controlador/logout.php">Logout</a></li>
-            </ul>
-        </div>
-        <div id="contenido"  class="dos">
-            <div id="formulario">
-                <h1>Editar/Crear Banners</h1>
-                <form action="" method="post">
-                    <label>Título</label><input type="text" name="titulo" class="titulo" />
-                    <label>Url</label><input type="text" name="url" class="url" />
-                    <label>Imagen</label><input type="text" name="imagen" class="imagen" />
-                </form><br/>
-                <a href=""><strong>Guardar</strong></a>
+            <div id="menus">
+                <h1>Inicia Sesión antes de continuar</h1>
             </div>
-            <div id="operaciones">
-                <a href=""><strong>Agregar Nuevo</strong></a>
-                <div id="listado">
-                    <h2>Listado de banners</h2>
-                    <ul>
-
-                    </ul>
-                </div>
+        </div>
+        <div id="contenido" class="uno">
+            <div id="formulario">
+                <h2>Bienvenido</h2>
+                <form>
+                    <label>Usuario</label><input type="text" name="usuario" id="usuario" />
+                    <label>Contraseña</label><input type="password" name="password" id="password"/>
+                </form>
+                <a href=""><strong>Login</strong></a>
             </div>
         </div>
     </body>

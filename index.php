@@ -11,11 +11,7 @@
         <div id="cabecera">
             <div class="logo"></div>
             <ul id="menus">
-                <li class="menu"><a class="boton" href="">Menu 1</a></li>
-                <li class="menu"><a class="boton" href="">Menu Muy Grande</a></li>
-                <li class="menu"><a class="boton" href="">Menu 3</a></li>
-                <li class="menu"><a class="boton" href="">Menu 4</a></li>
-                <li class="menu"><a class="boton" href="">Menu Aun Mas Grande</a></li>
+                <?php require 'Controlador/menus.php' ?>
             </ul>
         </div>
         <div id="contenido">
@@ -27,10 +23,7 @@
                 <img src="Vista/img/slider/slider5.jpg" alt="slider5" />
             </div>
             <div id="noticia">
-                <h1>Titulo Noticia</h1>
-                <p>
-                    Contenido de la Notica
-                </p>
+                <?php require 'Controlador/noticias.php' ?>
             </div>
         </div>
         <div id="banners">
