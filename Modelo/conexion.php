@@ -1,8 +1,8 @@
 <?php
 
 function conectar() {
-    //$host = "mysql.hostinger.mx";
-    $host = "localhost";
+    $host = "mysql.hostinger.mx";
+    //$host = "localhost";
     $user = "u791284268_root";
     $password = "123456";
     $database = "u791284268_db";
