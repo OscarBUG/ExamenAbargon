@@ -5,10 +5,10 @@
         <title>Back-end</title>
         <link type="text/css" href="Vista/css/back.css" rel="stylesheet" />
         <script src="Vista/js/jquery-1.11.2.min.js"></script>
-        <script src="Vista/js/back.js"></script>
+        <script src="Vista/js/admin.js"></script>
         <?php
-            require 'Controlador/sesion.php';
-            enSesion();
+        require 'Controlador/sesion.php';
+        enSesion();
         ?>
     </head>
     <body>
@@ -25,9 +25,9 @@
             <div id="formulario">
                 <h1>Editar/Crear Banners</h1>
                 <form action="" method="post">
-                    <label>Título</label><input type="text" id="titulo" />
-                    <label>Url</label><input type="text" id="url" />
-                    <label>Imagen</label><input type="text" id="imagen" />
+                    <label>Título</label><input type="text" name="titulo" class="titulo" />
+                    <label>Url</label><input type="text" name="url" class="url" />
+                    <label>Imagen</label><input type="text" name="imagen" class="imagen" />
                 </form><br/>
                 <a href=""><strong>Guardar</strong></a>
             </div>
@@ -36,36 +36,7 @@
                 <div id="listado">
                     <h2>Listado de banners</h2>
                     <ul>
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto 1</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li>
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto relativamente grade</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li>
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto 3</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li>
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto 4</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li>    
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto 4</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li> 
-                        <li>
-                            <a href="#"><div class="tituloLi">Elemnto 4</div></a>
-                            <a href="#"><div class="iconEliminar"></div></a>
-                            <a href="#"><div class="iconModificar"></div></a>
-                        </li> 
+
                     </ul>
                 </div>
             </div>

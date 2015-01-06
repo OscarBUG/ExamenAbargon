@@ -1,7 +1,8 @@
 <?php
 
 function conectar() {
-    $host = "mysql.hostinger.mx";
+    //$host = "mysql.hostinger.mx";
+    $host = "localhost";
     $user = "u791284268_root";
     $password = "123456";
     $database = "u791284268_db";
@@ -34,6 +35,7 @@ function execute($query) {
         return -1;
     $result = mysqli_query($conn, $query);
     if(!$result) return -2;
+    $return = array();
     while($row = mysqli_fetch_row($result)){
         $return[] = $row;
     }

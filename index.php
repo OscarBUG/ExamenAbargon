@@ -34,11 +34,7 @@
             </div>
         </div>
         <div id="banners">
-            <a class="banner" href="http://lorempixel.com/400/200/"><img src="http://lorempixel.com/401/200/" alt="banner1" /></a>
-            <a class="banner" href="http://lorempixel.com/400/200/"><img src="http://lorempixel.com/402/200/" alt="banner1" /></a>
-            <a class="banner" href="http://lorempixel.com/400/200/"><img src="http://lorempixel.com/403/200/" alt="banner1" /></a>
-            <a class="banner" href="http://lorempixel.com/400/200/"><img src="http://lorempixel.com/404/200/" alt="banner1" /></a>
-            <a class="banner" href="http://lorempixel.com/400/200/"><img src="http://lorempixel.com/405/200/" alt="banner1" /></a>
+            <?php require 'Controlador/banners.php' ?>
         </div>
     </body>
 </html>
