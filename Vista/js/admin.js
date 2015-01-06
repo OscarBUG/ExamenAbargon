@@ -10,6 +10,7 @@ $(document).on('ready', function () {
         // e.preventDefault();
         // alert('Presionando un Menu');
     });
+    
 
     menus.eq(2).on('click', function (e) { //Banner
         // e.preventDefault();
@@ -37,7 +38,12 @@ $(document).on('ready', function () {
                 $("#formulario h1").html(data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                $("#formulario h1").html("Ocurrio un error inesperado");
+                //$("#formulario h1").html(textStatus+errorThrown);
+                console.log($(".campo").eq(1).val());
+                console.log($(".campo").eq(2).val());
+                console.log(textStatus);
+                console.log(errorThrown);
+                console.log(jqXHR);
             },
             complete: function (jqXHR, textStatus) {
                 $("#formulario h1").html("Editar/Crear Banners");

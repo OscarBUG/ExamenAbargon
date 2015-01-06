@@ -1,12 +1,11 @@
 <?php
 
 function conectar() {
-    $host = "mysql.hostinger.mx";
-    //$host = "localhost";
-    $user = "u791284268_root";
-    $password = "123456";
-    $database = "u791284268_db";
-
+    $host = "localhost";
+    $user = "anthillc_root";
+    $password = "oscarbug";
+    $database = "anthillc_bd";
+   
     return mysqli_connect($host, $user, $password, $database);
 }
 

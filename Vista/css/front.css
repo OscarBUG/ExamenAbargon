@@ -79,6 +79,9 @@
 
 #contenido div{
     float: left;
+    max-width: 60%;
+    //overflow: hidden;
+    white-space:normal;
     margin-right: 20px;
 }
 
